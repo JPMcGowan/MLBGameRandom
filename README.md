@@ -1,10 +1,11 @@
 # MLBGameRandom
-You need to install the latest version of Python to run this.
 
-You can download it at https://www.python.org/downloads/release/python-382/
+Extract the downloaded MLBGameRandom.zip file and open the master file.
 
-Select the "Windows x86-64 executable installer" if on Windows or the "macOS 64-bit installer" if on macOS.
+Run the MLBGameRandom.exe file to get your game.
 
-Once Python has been set up, extract the downloaded MLBGameRandom.zip file and open the master file.
+If the .exe file will not run, go to https://www.python.org/downloads/release/python-382/ and download the latest version of Python
 
-Run the MLBGameRandom.py file to get your game.
+If on Windows, download "Windows x86-64 executable installer" and if on macOS download "macOS 64-bit installer"
+
+Then, run the .exe and you should be good to go.
