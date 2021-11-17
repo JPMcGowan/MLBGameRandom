@@ -3,11 +3,17 @@ import webbrowser
 import time
 
 #Random team
-teamArray = ("Diamondbacks", "Braves", "Orioles", "Red Sox", "Cubs", "White Sox", "Reds", "Indians", "Rockies", "Tigers"
+teamArray = ("Diamondbacks", "Braves", "Orioles", "Red Sox", "Cubs", "White Sox", "Reds", "Guardians", "Rockies", "Tigers"
              , "Astros", "Royals", "Angels", "Dodgers", "Marlins", "Brewers", "Twins", "Mets", "Yankees", "A's",
              "Phillies", "Pirates", "Padres", "Giants", "Mariners", "Rays", "Rangers", "Blue Jays", "Nationals")
+             
+teamArrayAbbrev = ("ARI", "ATL", "BAL", "BOS", "CHN", "CHA", "CIN", "CLE", "COL", "DET"
+             , "HOU", "KCR", "LAA", "LAN", "MIA", "MIL", "MIN", "NYN", "NYA", "OAK",
+             "PHI", "PIT", "SDN", "SFN", "SEA", "TBA", "TEX", "TOR", "WSH")
+             
 teamNum = random.randint(1,30) - 1
 team = teamArray[teamNum]
+teamAbbrev = teamArrayAbbrev[teamNum]
 
 #Random month
 monthArray = ("March", "April", "May", "June", "July", "August", "September")
@@ -58,6 +64,6 @@ if year == 2018:
 print("TEAM: %s" % (team))
 print("DAY: %s %s, %s" % (month, day, year))
 
-gameURL = "https://www.youtube.com/results?search_query=%s+%s+%s+%s" % (team, month, day, year)
+gameURL = "https://www.youtube.com/results?search_query=%s+%s+%s+%s" % (teamAbbrev, month, day, year)
 time.sleep(3)
 webbrowser.open(gameURL)
