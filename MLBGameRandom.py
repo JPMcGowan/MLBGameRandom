@@ -1,15 +1,20 @@
 import random
 import webbrowser
 import time
+import xlrd
+
+#loc = ("C:\Users\jm50016\Downloads\MLBRandomGame.py")
+#wb = xlrd.open_workbook(loc)
+#sheet = wb.sheet_by_index(0)
 
 #Random team
-teamArray = ("Diamondbacks", "Braves", "Orioles", "Red Sox", "Cubs", "White Sox", "Reds", "Guardians", "Rockies", "Tigers"
-             , "Astros", "Royals", "Angels", "Dodgers", "Marlins", "Brewers", "Twins", "Mets", "Yankees", "A's",
+teamArray = ("Diamondbacks", "Braves", "Orioles", "Red Sox", "Cubs", "White Sox", "Reds", "Guardians", "Rockies", "Tigers", 
+             "Astros", "Royals", "Angels", "Dodgers", "Marlins", "Brewers", "Twins", "Mets", "Yankees", "A's",
              "Phillies", "Pirates", "Padres", "Giants", "Mariners", "Rays", "Rangers", "Blue Jays", "Nationals")
              
-teamArrayAbbrev = ("ARI", "ATL", "BAL", "BOS", "CHN", "CHA", "CIN", "CLE", "COL", "DET"
-             , "HOU", "KCR", "LAA", "LAN", "MIA", "MIL", "MIN", "NYN", "NYA", "OAK",
-             "PHI", "PIT", "SDN", "SFN", "SEA", "TBA", "TEX", "TOR", "WSH")
+teamArrayAbbrev = ("ARI", "ATL", "BAL", "BOS", "CHN", "CHA", "CIN", "CLE", "COL", "DET", 
+                   "HOU", "KCR", "LAA", "LAN", "MIA", "MIL", "MIN", "NYN", "NYA", "OAK",
+                   "PHI", "PIT", "SDN", "SFN", "SEA", "TBA", "TEX", "TOR", "WSH")
              
 teamNum = random.randint(1,30) - 1
 team = teamArray[teamNum]
